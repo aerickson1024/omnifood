@@ -172,6 +172,9 @@ input[type=submit] {
 }
 /*---------------------------------------------*/
 /* HEADER */
+/*
+    possible fix here https://css-tricks.com/forums/topic/full-page-backgrounds-on-ios-background-size-cover/page/4/
+*/
 /*---------------------------------------------*/
 header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
@@ -228,6 +231,19 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+/*---------------------------------------------*/
+/* MOBILE NAVIGATION */
+/*---------------------------------------------*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
 }
 /*---------------------------------------------*/
 /* STICKY NAVIGATION */
@@ -524,6 +540,25 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 20px;
+}
+/*---------------------------------------------*/
+/* ANIMATIONS */
+/*---------------------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
 
 
